@@ -53,16 +53,33 @@ const questions = [
 // });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {
-  inquirer.prompt(questions).then((data) => {
-    fs.writeFile("README.md", JSON.stringify(data), (error) => {
-      error ? console.log(error) : console.log("file was written");
-    });
+function writeToFile(fileName, data) {
+  fs.writeFile("GENERATEDREADME.md", data, (err) => {
+    err ? console.log(err) : console.log("File was written!!!");
   });
 }
 
+// // TODO: Create a function to initialize app
+// function init() {
+//   inquirer.prompt(questions).then((data) => {
+//     fs.writeFile("README.md", JSON.stringify(data), (error) => {
+//       error ? console.log(error) : console.log("file was written");
+//     });
+//   });
+// }
+
+// // Function call to initialize app
+// init();
+
+
+
+
 // Function call to initialize app
+function init() {
+  return inquirer.prompt(questions).then((data) => {
+    writeToFile("GENERATEDREADME.md", generateMarkdown(data));
+  });
+}
+
+
 init();
