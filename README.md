@@ -1,1 +1,1 @@
-{"github":"it","email":"sien","title":"lled","description":"lennec","license":"MIT","installation":"ge","test":"xf","contributor":"gg"}
+{"github":"7steph7gmailcom","email":"7steph7@gmail.com","title":"ReadME Generator","description":"Creates a template for ReadME files for future projects","license":"none or other","installation":"N/A","test":"N/A","contributor":"N/A"}

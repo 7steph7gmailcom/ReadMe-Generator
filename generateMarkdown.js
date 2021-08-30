@@ -4,16 +4,20 @@
 function renderLicenseLink(license) {
   if (license == "MIT") {
     return `
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
   if (license == "BDS 3") {
     return `
-  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`:
+  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
   }
   if (license == "Apache 2.0") {
     return `
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   }
+  else {
+  "none or other" 
+  }
+  return
 }
 
 
@@ -33,45 +37,47 @@ function renderLicenseSection(license) {
     return `## License Resources
   https://opensource.org/licenses/Apache-2.0`;
   }
-  if (license !== "none") return "";
+  else (license !== "none") return "";
 }
-
 
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.license)}
+  # Title of Project
+  ${data.title}
 
-  ## Description 
+  ## Description  of Project
   ${data.description}
-  ## Installation Instructions
-  ${data.installation}
 
-  ## Usage
-  ${data.usage}
+  ## Github username
+  github.com/${data.Github}
 
   ## Table of Contents
-  
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
+  * [Description](#description of project)
   * [Contribution](#contribution)
   * [Tests](#test)
   * [License Resources](#license)
-  * [Questions](#questions)
+  * [Installation](#installation)
   
-  ## Contribution
-  ${data.contribution}
+  ##License badge
+  ${data.renderLicenseSection(license)}
 
-  ## Tests
+  ##License link
+ ${data.renderLicenseLink(license)}
+
+  ## email address
+  ${data.email}
+
+  ## Installation Instructions
+  ${data.installation}
+
+  ## Commands to run for tests
   ${data.test}
 
-  ${renderLicenseSection(data.license)}
+  ## Contribution
+  ${data.contributor}
 
-  ## Questions
-  github.com/${data.Github}
-
-  ${data.email}
+  
 }
 `;
 }

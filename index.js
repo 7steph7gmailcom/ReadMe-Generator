@@ -29,7 +29,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "What type of license does your project use?",
-    choices: ["MIT", "BDS 3", "APACHE 2.0"],
+    choices: ["MIT", "BDS 3", "APACHE 2.0", "none or other"],
   },
   {
     type: "input",
@@ -59,27 +59,20 @@ function writeToFile(fileName, data) {
   });
 }
 
-// // TODO: Create a function to initialize app
-// function init() {
-//   inquirer.prompt(questions).then((data) => {
-//     fs.writeFile("README.md", JSON.stringify(data), (error) => {
-//       error ? console.log(error) : console.log("file was written");
-//     });
-//   });
-// }
-
-// // Function call to initialize app
-// init();
-
-
-
-
-// Function call to initialize app
+// TODO: Create a function to initialize app
 function init() {
-  return inquirer.prompt(questions).then((data) => {
-    writeToFile("GENERATEDREADME.md", generateMarkdown(data));
+  inquirer.prompt(questions).then((data) => {
+    fs.writeFile("README.md", JSON.stringify(data), (error) => {
+      error ? console.log(error) : console.log("file was written");
+    });
   });
 }
+
+// function init() {
+//   return inquirer.prompt(questions).then((data) => {
+//     writeToFile("GENERATEDREADME.md", generateMarkdown(data));
+//   });
+// }
 
 
 init();
