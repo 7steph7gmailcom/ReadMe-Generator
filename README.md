@@ -1,1 +1,1 @@
-{"github":"7steph7gmailcom","email":"7steph7@gmail.com","title":"ReadME Generator","description":"Creates a template for ReadME files for future projects","license":"none or other","installation":"N/A","test":"N/A","contributor":"N/A"}
+{"github":"jjek","email":"ennds","title":"nnff","description":"jjeif","license":"BDS 3","installation":"iieksnggg.kkgkgf","test":"jjifig","contributor":"oiig"}

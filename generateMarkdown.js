@@ -37,8 +37,10 @@ function renderLicenseSection(license) {
     return `## License Resources
   https://opensource.org/licenses/Apache-2.0`;
   }
-  else (license !== "none") return "";
-}
+  else (license !== "none") 
+    return "";
+  }
+
 
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -63,7 +65,7 @@ function generateMarkdown(data) {
   ${data.renderLicenseSection(license)}
 
   ##License link
- ${data.renderLicenseLink(license)}
+  ${data.renderLicenseLink(license)}
 
   ## email address
   ${data.email}
@@ -76,13 +78,9 @@ function generateMarkdown(data) {
 
   ## Contribution
   ${data.contributor}
+  `
 
-  
-}
-`;
+
 }
 
 module.exports = generateMarkdown;
-
-
-
