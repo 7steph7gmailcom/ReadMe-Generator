@@ -51,21 +51,23 @@ function generateMarkdown(data) {
   ## Description  of Project
   ${data.description}
 
+  ## Table of Contents
+  * [Github account] (github.com)
+  * [License badge (license)
+  * [License Resources](license)
+  * [Email] (address)
+  * [Installation](installation requirements)
+  * [Tests](test)
+  * [Contribution](contribution)
+  
   ## Github username
   github.com/${data.Github}
 
-  ## Table of Contents
-  * [Description](#description of project)
-  * [Contribution](#contribution)
-  * [Tests](#test)
-  * [License Resources](#license)
-  * [Installation](#installation)
-  
   ##License badge
-  ${renderLicenseSection(data.license)}
+  renderLicenseSection${data.license}
 
   ##License link
-  ${renderLicenseLink(data.license)}
+  renderLicenseLink${data.license}
 
   ## email address
   ${data.email}
