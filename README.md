@@ -1,10 +1,10 @@
 # ReadME.md 
 
   # Title of Project
-  jkel
+  k
 
   ## Description  of Project
-  sss
+  w
 
   ## Table of Contents
   * [Github account] (github.com)
@@ -16,23 +16,25 @@
   * [Contribution](contribution)
   
   ## Github username
-  github.com/undefined
+  github.com/s
 
   ##License badge
-  renderLicenseSectionBDS 3
+  ## License Resources
+  https://opensource.org/licenses/MIT
 
   ##License link
-  renderLicenseLinkBDS 3
+  
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## email address
-  ges
+  s
 
   ## Installation Instructions
-  dss
+  e
 
   ## Commands to run for tests
-  eesg
+  x
 
   ## Contribution
-  fe
+  s
   

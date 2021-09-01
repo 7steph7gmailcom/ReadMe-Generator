@@ -47,7 +47,7 @@ const questions = [
     type: "input",
     name: "contributor",
     message: "How does a user contribute to this file?",
-  },
+  }
 ];
 
 // inquirer.prompt(questions).then((data) => {
@@ -58,15 +58,6 @@ const questions = [
 function writeToFile(fileInfo, response) {
   return fs.writeFileSync(path.join(process.cwd(),fileInfo), response)
 }
-
-// TODO: Create a function to initialize app
-// function init() {
-//   inquirer.prompt(questions).then((data) => {
-//     fs.writeFile("README.md", JSON.stringify(data), (error) => {
-//       error ? console.log(error) : console.log("file was written");
-//     });
-//   });
-// }
 
 function init() {
   inquirer.prompt(questions).then((inquirerResponses) => {

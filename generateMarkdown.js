@@ -14,10 +14,11 @@ function renderLicenseLink(license) {
     return `
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   }
-  else {
-  "none or other" 
+  else {license == "none or other"
+  return "";
+
   }
-  return
+  
 }
 
 
@@ -39,6 +40,7 @@ function renderLicenseSection(license) {
   }
   else (license !== "none") 
     return "";
+
   }
 
 
@@ -61,13 +63,13 @@ function generateMarkdown(data) {
   * [Contribution](contribution)
   
   ## Github username
-  github.com/${data.Github}
+  github.com/${data.github}
 
   ##License badge
-  renderLicenseSection${data.license}
+  ${renderLicenseSection(data.license)}
 
   ##License link
-  renderLicenseLink${data.license}
+  ${renderLicenseLink(data.license)}
 
   ## email address
   ${data.email}
@@ -81,8 +83,6 @@ function generateMarkdown(data) {
   ## Contribution
   ${data.contributor}
   `
-
-
 }
 
 module.exports = generateMarkdown;
