@@ -1,10 +1,10 @@
 # ReadME.md 
 
   # Title of Project
-  k
+  jidd
 
   ## Description  of Project
-  w
+  djkls
 
   ## Table of Contents
   * [Github account] (github.com)
@@ -16,25 +16,25 @@
   * [Contribution](contribution)
   
   ## Github username
-  github.com/s
+  github.com/dd
 
   ##License badge
   ## License Resources
-  https://opensource.org/licenses/MIT
+  https://https://opensource.org/licenses/bsd-3-clause
 
   ##License link
   
-  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
   ## email address
-  s
+  dds
 
   ## Installation Instructions
-  e
+  ee
 
   ## Commands to run for tests
-  x
+  fe
 
   ## Contribution
-  s
+  ss
   
