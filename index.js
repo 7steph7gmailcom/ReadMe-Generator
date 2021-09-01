@@ -9,16 +9,6 @@ const path = require ("path")
 const questions = [
   {
     type: "input",
-    message: "What is your github username?",
-    name: "github",
-  },
-  {
-    type: "input",
-    message: "What is your email address?",
-    name: "email",
-  },
-  {
-    type: "input",
     name: "title",
     message: "What is your projects name?",
   },
@@ -28,10 +18,20 @@ const questions = [
     message: "Brief description of project",
   },
   {
+    type: "input",
+    message: "What is your github username?",
+    name: "github",
+  },
+  {
     type: "list",
     name: "license",
     message: "What type of license does your project use?",
     choices: ["MIT", "BDS 3", "APACHE 2.0", "none or other"],
+  },
+  {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
   },
   {
     type: "input",
