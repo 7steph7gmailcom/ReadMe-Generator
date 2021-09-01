@@ -1,10 +1,10 @@
 # ReadME.md 
 
   # Title of Project
-  jidd
+  Dirty Dancing
 
   ## Description  of Project
-  djkls
+  One summer up at the Catskills, I learned to dance AND I fell in LOVE
 
   ## Table of Contents
   * [Github account] (github.com)
@@ -16,25 +16,25 @@
   * [Contribution](contribution)
   
   ## Github username
-  github.com/dd
+  github.com/Frances "Baby" Houseman
 
   ##License badge
   ## License Resources
-  https://https://opensource.org/licenses/bsd-3-clause
+  https://opensource.org/licenses/MIT
 
   ##License link
   
-  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## email address
-  dds
+  nobody puts Baby in the corner@gmail.com
 
   ## Installation Instructions
-  ee
+  N/A
 
   ## Commands to run for tests
-  fe
+  Maybe just one for Penny
 
   ## Contribution
-  ss
+  I did carry a watermelon to the party
   
